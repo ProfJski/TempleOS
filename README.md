@@ -47,7 +47,9 @@ Same image as above, grayscale palette:<br>
 
 ## How to run the program
 ### Getting it on to TempleOS
-Since TempleOS has no internet functionality, you either must do as they did in the 1980s and type the code in by hand, or figure out some other way to get it into the OS.  TempleOS runs well on Windows in VirtualBox.  If you choose the **.VHD** file format (or copy to it), you can mount it as a partition in Windows via Disk Manager.  Then you can copy the file into your home directory on TempleOS.
+Since TempleOS has no internet functionality, you either must do as they did in the 1980s and type the code in by hand, or figure out some other way to get it into the OS.  TempleOS runs well on Windows in VirtualBox.  If you choose the **.VHD** file format, you can mount it as a partition in Windows via Disk Manager.  Then you can copy the Mandelbrot.HC file into your home directory on TempleOS from Windows.  This is the easiest way I know.  
+
+Google for how to mount a .VHD file as a disk.  Your VHD must be FAT32 formatted for this to work, but this format was the default when I installed TempleOS from the ISO, so it worked easily. 
 
 ### Running it on TempleOS
 You can either:
