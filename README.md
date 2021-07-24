@@ -1,5 +1,7 @@
 # TempleOS
-[TempleOS](https://templeos.org/) is a free & open source, 64-bit, multitasking operating system programmed entirely by one man, Terry A. Davis, who was at the same time a brilliant programmer and a deeply troubled man afflicted by schizophrenia.  He believed he was called by God to build the Third Temple, which was this operating system.  He died homeless and alone on August 11, 2018 when he was struck by a train.
+[TempleOS](https://templeos.org/) is a free & open source, 64-bit, multitasking operating system programmed entirely by one man, Terry A. Davis, who was at the same time a brilliant programmer and a deeply troubled man afflicted by schizophrenia.  He believed he was called by God to build the Third Temple, which was this operating system.  He died homeless and alone on August 11, 2018 when he was struck by a train.  
+
+*Disclaimer: Davis held a number of bizarre views; the reader should not presume I share them just because I coded in TempleOS, any more than I share Linus Torvalds' politics, religion or morals because I use Linux.*
 
 Davis programmed TempleOS in his own C-like language which he called "HolyC", which he intended to be somewhere between C and C++ in style, together with Davis' own features.  First he wrote his own compiler for HolyC and assembly language.  Then the whole operating system was written from scratch in HolyC, including interrupt handlers, drivers, etc.  He stocked it with a suite of utilities, ranging from functions typical for a shell to a 4th-order Runge-Kutta ordinary differential equation solver.  He wrote some demos and provided extensive documentation to help users.  It is a marvel for one man to have written an operating system of this scope.
 
@@ -50,21 +52,19 @@ Since TempleOS has no internet functionality, you either must do as they did in 
 ### Running it on TempleOS
 You can either:
 
-Navigate to the Mandelbrot.HC file, press space to load it in the editor, and press F5 to run it.
+#### Run it from the editor
+Navigate to the Mandelbrot.HC file, press space to load it into the editor, and press F5 to run it.
 Selecting it:
 ![TempleOS Command Line](/IMG/TOS-M1.PNG)
 <br>
 The view from the editor looks like this -- now press F5 to run:
 ![Coding](/IMG/TOS-M2.PNG)
+<br>
 
-or you can run it from the command line:
-
-From the command line, `#include "Mandelbrot.HC"` and press enter.  Next type a semicolon `;` and press enter.  You just loaded the program into memory.  Type `Mandelbrot;` to run it.
+#### Run it from the command line:
+From the command line, `#include "Mandelbrot.HC"` and press enter.  You just loaded the program into memory!  Type `Mandelbrot;` to run it.
 
 ### To quit the program
 Just **Press ESC** as one does elsewhere in the OS.  Then **Press SHIFT-ESC** to quit the screen you're on and go back to your previous screen.
-
-
-
 
 
