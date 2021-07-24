@@ -8,6 +8,8 @@ Although its interface is not pretty, TempleOS is actually a fairly easy environ
 ## Mandelbrot Viewer
 I wrote a simple Mandelbrot set viewer just to see if I could do it.  It only took me a day to learn my way around the OS and another to successfully code my first program.   The experience reminded me of learning to code my first such program on an early Tandy computer.
 
+![16 color MB set](/img/TOS-M3.PNG)
+
 To use it, simply mouse over the point you wish, and **press "i"** to Zoom In or **press "o"** to Zoom Out around this point.
 Max iterations start at 250.  To increase them, **press "m"** for More Iterations.  The max doubles with each press.
 **Press "p"** to toggle printing of the coordinates of the center point of the image, magnification scale, and max iterations.
