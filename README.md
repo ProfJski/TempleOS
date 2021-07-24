@@ -8,7 +8,7 @@ Although its interface is not pretty, TempleOS is actually a fairly easy environ
 ## Mandelbrot Viewer
 I wrote a simple Mandelbrot set viewer just to see if I could do it.  It only took me a day to learn my way around the OS and another to successfully code my first program.   The experience reminded me of learning to code my first such program on an early Tandy computer.
 
-![16 color MB set](/img/TOS-M3.PNG)
+![16 color MB set](/IMG/TOS-M3.PNG)
 
 To use it, simply mouse over the point you wish, and **press "i"** to Zoom In or **press "o"** to Zoom Out around this point.
 Max iterations start at 250.  To increase them, **press "m"** for More Iterations.  The max doubles with each press.
@@ -37,8 +37,16 @@ Since TempleOS has no internet functionality, you either must do as they did in 
 
 ### Running it on TempleOS
 You can either:
+
 Navigate to the Mandelbrot.HC file, press space to load it in the editor, and press F5 to run it.
-or,
+Selecting it:
+![TempleOS Command Line](/IMG/TOS-M1.PNG)
+<br>
+The view from the editor looks like this -- now press F5 to run:
+![Coding](/IMG/TOS-M2.PNG)
+
+or you can run it from the command line:
+
 From the command line, `#include "Mandelbrot.HC"` and press enter.  Next type a semicolon `;` and press enter.  You just loaded the program into memory.  Type `Mandelbrot;` to run it.
 
 ### To quit the program
