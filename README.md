@@ -1,12 +1,12 @@
 # TempleOS
 [TempleOS](https://templeos.org/) is a free & open source, 64-bit, multitasking operating system programmed entirely by one man, Terry A. Davis, who was at the same time a brilliant programmer and a deeply troubled man afflicted by schizophrenia.  He believed he was called by God to build the Third Temple, which was this operating system.  He died homeless and alone on August 11, 2018 when he was struck by a train.
 
-Davis programmed TempleOS in his own C-like language which he called "HolyC", which he intended to be somewhere between C and C++ in style, together with Davis' own features.  So first he wrote his own compiler for HolyC and assembly language.  The whole operating system was written from scratch, including interrupt handlers, drivers, etc.  He also stocked it with a suite of utilities and little demos.  It is a marvel for one man to have written an operating system of this scope.
+Davis programmed TempleOS in his own C-like language which he called "HolyC", which he intended to be somewhere between C and C++ in style, together with Davis' own features.  First he wrote his own compiler for HolyC and assembly language.  Then the whole operating system was written from scratch in HolyC, including interrupt handlers, drivers, etc.  He stocked it with a suite of utilities, ranging from functions typical for a shell to a 4th-order Runge-Kutta ordinary differential equation solver.  He wrote some demos and provided extensive documentation to help users.  It is a marvel for one man to have written an operating system of this scope.
 
-Although its interface is not pretty, TempleOS is actually a fairly easy environment to learn to code in, if one already knows C.  The learning curve is not too steep.  Davis documented much of the language, and an Autocomplete quickly takes you to relevant source code. He wished it to be an operating system that people could use simply to enjoy coding, similar to his own experiences with a Commodore 64.  I'd say he was fairly successful.  And the OS is fast!
+Although its interface is not pretty, TempleOS is actually a fairly easy environment to learn to code in, if one already knows C.  The learning curve is not too steep.  Davis documented much of the language, and Autocomplete quickly takes you to relevant source code for function definitions. He wished it to be an operating system that people could use simply to enjoy coding, similar to his own experiences with a Commodore 64.  I'd say he was fairly successful.  And the OS is fast!
 
 ## Mandelbrot Viewer
-I wrote a simple Mandelbrot set viewer just to see if I could do it.  It only took me a day to learn my way around the OS and another to successfully code my first program.   The experience reminded me of learning to code my first such program on an early Tandy computer.
+I wrote a simple Mandelbrot set viewer just to see if I could do it.  It only took me a day to learn my way around TempleOS and another to successfully code my first program.   The experience reminded me of learning to code my first Mandelbrot program on an early [Tandy 1000](https://en.wikipedia.org/wiki/Tandy_1000) computer.
 
 ![16 color MB set](/IMG/TOS-M3.PNG)
 
@@ -16,12 +16,21 @@ Max iterations start at 250.  To increase them, **press "m"** for More Iteration
 
 ### Iteration Mapping
 You can select from 4 different types of iteration to color mapping.  Since TempleOS by design only accommodates a 16-color palette, having some iteration mapping options helps visualization.  **Press keys 1-4** for the different iteration maps, which are:
-- Linear: simply returns iterations mod 15.
-- Linear/10: returns (iterations/10) mod 15.
-- Sqrt: returns Sqrt(iterations) mod 15.
-- Log: returns Log10(iterations) mod 15.
+- **Linear**: simply returns `1+(iterations%15)`.  % is mod.
+- **Linear/10**: returns `1+(iterations/10)%15`.  Stretches out each color over 10 iterations.
+- **Sqrt**: returns `1+Sqrt(iterations)%15`.  Good for areas where iterations vary greatly.
+- **Log**: returns `1+Log10(iterations)%15`.  The most aggressive option.
 You may need to wait a few seconds for the updated image since it must be redrawn.
 It should be easy to program your own mappings with the set-up provided.
+
+Example:
+
+Standard linear mapping:<br>
+![Linear Map](/IMG/TOS-M5.PNG)
+
+Same image, Linear/10 mapping:<br>
+![Linear/10 Map](/IMG/TOS-M6.PNG)
+
 
 ### Palette changing
 You can also change palettes by **pressing keys 6-9**.  Palette changes are instant, as in the good old days of VGA programming.
@@ -30,6 +39,9 @@ It should be easy to program your own palettes with the set-up provided.  The tw
 - TempleOS standard grayscale palette
 - Red-blue gradient palette
 - Fiery palette
+
+Same image as above, grayscale palette:<br>
+![Grayscale palette](/IMG/TOS-M7.PNG)
 
 ## How to run the program
 ### Getting it on to TempleOS
