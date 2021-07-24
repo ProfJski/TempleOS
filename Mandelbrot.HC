@@ -1,4 +1,4 @@
-//Mandlebrot Set Explorer for TempleOS
+//Mandelbrot Set Explorer for TempleOS
 //By Eric Jenislawski
 
 
@@ -244,4 +244,4 @@ U0 Mandlebrot(){
    DCFill;
 }
 
-Mandlebrot;
+Mandelbrot;
