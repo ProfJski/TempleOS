@@ -1,7 +1,7 @@
 # TempleOS
 [TempleOS](https://templeos.org/) is a free & open source, 64-bit, multitasking operating system programmed entirely by one man, Terry A. Davis, who was at the same time a brilliant programmer and a deeply troubled man afflicted by schizophrenia.  He believed he was called by God to build the Third Temple, which was this operating system.  He died homeless and alone on August 11, 2018 when he was struck by a train.  
 
-*Disclaimer: Davis held a number of bizarre views; the reader should not presume I share them just because I coded in TempleOS, any more than I share Linus Torvalds' politics, religion or morals because I use Linux.*
+*Disclaimer: Davis held a number of bizarre views; the reader should not presume I share them just because I coded in TempleOS. No one presumes that Linux users share Linus Torvalds' politics, religion or morals just because they use Linux. The same goes for TempleOS or Windows.*
 
 Davis programmed TempleOS in his own C-like language which he called "HolyC", which he intended to be somewhere between C and C++ in style, together with Davis' own features.  First he wrote his own compiler for HolyC and assembly language.  Then the whole operating system was written from scratch in HolyC, including interrupt handlers, drivers, etc.  He stocked it with a suite of utilities, ranging from functions typical for a shell to a 4th-order Runge-Kutta ordinary differential equation solver.  He wrote some demos and provided extensive documentation to help users.  It is a marvel for one man to have written an operating system of this scope.
 
